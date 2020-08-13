@@ -42,7 +42,7 @@ app.get('/users/:id', (req, res) => {
 
 
 app.delete('/users/:id', (req, res) => {
- var sql = 'DELETE  FROM Users WHERE id=' + req.params.id;
+ var sql = 'DELETE FROM Users WHERE id=' + req.params.id;
  // var sql2 = 'SELECT * FROM Users WHERE name=\'' 
  //                       + req.params.name + '\'';
  connection.query(sql, (error, rows) => {
